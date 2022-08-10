@@ -3,6 +3,9 @@
 <head>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Página em exercício de responsividade e mobile">
@@ -28,39 +31,43 @@
     </header>
     <main>
         <section id="containerProduct">
-            <figure class="boxImgFlavo">
-                <img src="/imgs/intensity.png" alt="ILustração de caquinho Flavo">
+            <figure class="boximgFlavo">
+                <img src="/imgs/intensity.png" alt="ILustração de caquinho Flavo" class="imgFlavo">
             </figure>
-            <div class="boxProduct-price">
-                <h2>passion</h2>
-                <h2>$15</h2>
+            <div class="boxproductPrice">
+                <h2 class="nameProduct">intensity</h2>
+                <h2 class="priceProduct">$15</h2>
             </div>
             <div class="boxIngredients">
-                <h3>what's inside</h3>
-                <p>Chili, oregano, safran, paprika</p>
+                <h3 class="titleIngredients">what's inside</h3>
+                <p class="paragrafIngredients">Chili, oregano, safran, paprika</p>
             </div>
             <div class="boxDescription">
-                <h3>why we love it</h3>
-                <p>THis one will add a little savoury <br>flavour to any food and turn any <br>meal to a culinary masterpieice</p>
+                <h3 class="titleDescription">why we love it</h3>
+                <p class="paragrafDescription">This one will add a little savoury <br>flavour to any food and turn any <br>meal to a culinary masterpieice</p>
             </div>
         </section>
     </main>
     <footer>
         <section id="containerInputs">
-            <form  class="boxInputs">
-                <div class="firstRadio">
-                    <input type="radio" name="radio">
-                    <label for="radio">BAG (75g)</label>
+            <section  class="boxInputs">
+                <form class="firstRadiobag">
+                    <input type="radio" name="radio" class="inputBag">
+                    <label for="radio" class="titleBag">bag (75g)</label>
+                </form>
+                <div class="secondRadiojar">
+                    <input type="radio" name="radio" class="inputJar">
+                    <label for="radio" class="titleJar">jar (150g)</label>
                 </div>
-                <div class="secondRadio">
-                    <input type="radio" name="radio">
-                    <label for="radio">JAR (150g)</label>
+            </section>
+            <section class="boxButtons">
+                <div class="buttonOne">
+                    <button class="buttonAmount">Contador</button>
                 </div>
-            </form>
-            <form class="boxButtons">
-                <input type="button">
-                <button>ADD TO CART</button>
-            </form>
+                <div class="buttonTwo">
+                    <button class="buttonAddcart">ADD TO CART</button>
+                </div>
+            </section>
         </section>
     </footer>
 </body>
